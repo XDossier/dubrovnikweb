@@ -1028,3 +1028,66 @@ body.dark{
   border-radius: 30px;
   color: whitesmoke;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .navbar .menu-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 50vh;
+    background-size: cover;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+/* Tours section */
+.tours {
+  padding: 40px 0;
+}
+
+.red {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  margin: 10px 0;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .card {
+    width: 45%;
+  }
+}
