@@ -243,6 +243,45 @@
     display: none;
   }
 }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  header {
+    background-image: url("../img/du.jpg"); /* Use a high-res image for retina screens */
+  }
+}
+
+.header-content h2 {
+  font-size: calc(1.5rem + 1vw);
+  margin-bottom: 0.5rem;
+}
+
+.header-content h1 {
+  font-size: calc(2rem + 2vw);
+  margin-bottom: 1rem;
+}
+
+.header-content .line {
+  width: 100px;
+  height: 4px;
+  background: var(--main-color);
+  margin: 1rem auto;
+}
+
+.header-content .ctn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  color: whitesmoke;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.header-content .ctn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 @media screen and (max-width: 480px) {
 
   .header-content {
