@@ -162,11 +162,12 @@ header {
   width: 100%;
   height: 100vh;
   background-image: url("../img/du.jpg");
-  background-position: bottom;
+  background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
 }
 
@@ -176,15 +177,28 @@ header {
   color: rgb(255, 255, 255); 
   text-align: center;
   z-index: 1;
-  padding: 4rem;
+  padding: 2rem;
   margin-bottom: 150px;
 
+}
+
+.header-content h2 {
+  font-size: calc(1.5rem + 1vw);
+  margin-bottom: 0.5rem;
+  
+}
+
+.header-content .line {
+  width: 100px;
+  height: 4px;
+  background: var(--main-color);
+  margin: 1rem auto;
 }
 
 /* Adding text stroke (outline) */
 .header-content h1{
   font-family: var(--ff-rubik-dirt);
-  font-size: 1.5rem;
+  font-size: calc(2.2rem + 2vw);
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   font-weight: 300;
@@ -193,9 +207,25 @@ header {
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
   border-radius: 0.5rem;
+  margin-bottom: 1rem;
   
 }
 
+.header-content .ctn {
+  display: inline-block;
+  padding: 12px 30px;
+  
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  color: whitesmoke;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.header-content .ctn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
 
 .header-content a {
   letter-spacing: 0.1rem;
