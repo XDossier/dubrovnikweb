@@ -134,11 +134,32 @@
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   #about_us p {
     width: 85%;
     padding-top: 7em;
     margin: auto;
+  }
+
+  .header-content {
+    padding: 1.5rem;
+  }
+
+  .header-content h2 {
+    font-size: calc(1.2rem + 1vw);
+  }
+
+  .header-content h1 {
+    font-size: calc(1.5rem + 1.5vw);
+  }
+
+  .header-content .line {
+    width: 80px;
+  }
+
+  .header-content .ctn {
+    padding: 10px 25px;
+    font-size: calc(0.9rem + 0.5vw);
   }
   form,
   .cbox {
@@ -223,6 +244,27 @@
   }
 }
 @media screen and (max-width: 480px) {
+
+  .header-content {
+    padding: 1rem;
+  }
+
+  .header-content h2 {
+    font-size: calc(1rem + 1vw);
+  }
+
+  .header-content h1 {
+    font-size: calc(1.2rem + 1vw);
+  }
+
+  .header-content .line {
+    width: 60px;
+  }
+
+  .header-content .ctn {
+    padding: 8px 20px;
+    font-size: calc(0.8rem + 0.5vw);
+  }
   .ctn {
     padding: 13px 25px;
   }
