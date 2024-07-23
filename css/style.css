@@ -343,6 +343,9 @@ section {
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+  justify-content: center; /* Center content horizontally */
+  text-align: center; /* Center text content */
+  padding: 20px; /* Add padding for smaller screens */
 }
 
 .explore-content {
@@ -351,11 +354,12 @@ section {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-left: 8rem;
   position: relative;
   z-index: 1;
-  padding: 2rem 17px;
-  margin: auto;
+  padding: 2rem 1rem; /* Adjust padding for better responsiveness */
+  max-width: 90%; /* Ensure content doesn't overflow on smaller screens */
+  background: rgba(0, 0, 0, 0.5); /* Darker background for better readability */
+  border-radius: 0.5rem;
 }
 
 .explore-content::after {
@@ -365,19 +369,21 @@ section {
   z-index: -1;
   display: block;
   background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
   border-radius: 0.5rem;
 }
 
 .explore-content h1 {
-  /* width: 100%; */
-  font-size: calc(2.2rem + 1vw);
+  font-size: calc(2rem + 1vw); /* Adjust font size for responsiveness */
   letter-spacing: 0.3rem;
-  margin: auto;
+  margin-bottom: 20px;
 }
 
 .explore-content .line {
-  margin-bottom: 50px;
+  width: 100px;
+  height: 4px;
+  background: whitesmoke;
+  margin-bottom: 20px;
 }
 
 .explore-content p {
@@ -385,31 +391,30 @@ section {
   max-width: 65ch;
   line-height: 1.5;
   text-align: left;
-  padding: 0px 35px;
+  padding: 0 1rem; /* Adjust padding for better readability on smaller screens */
 }
-
-.explore-content .ctn {
-  margin: 17px auto;
-  padding: 12px 27px;
-}
-
 /* about */
-.image-gallery {
-  display: grid;
-  gap: 2rem 1rem;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  padding: 1rem;
-
+.about {
+  padding: 50px 0;
 }
 
-.tours .row {
-  gap: 4rem;
+.container.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Add gap between columns */
+}
+
+.content-col, .image-col {
+  flex: 1 1 100%; /* Allow columns to take full width on small screens */
+  max-width: 650px;
+  padding: 1rem;
 }
 
 .content-col {
-  position: relative;
-  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .content-col h1 {
@@ -419,31 +424,44 @@ section {
 }
 
 .content-col .line {
-  margin-left: 5;
+  width: 100px;
+  height: 4px;
+  background: var(--main-color);
+  margin: 10px 0 30px;
 }
 
 .content-col p {
   padding: 0;
-  margin: 30px 0;
+  margin: 20px 0;
   width: 100%;
   text-align: left;
   max-width: 40ch;
 }
 
-.content-col .ctn {
-  position: absolute;
-  left: 0;
-  bottom: -14%;
+.image-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.image-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.image-gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
 
 
 .gallery {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .container-gallery {
-  padding: 0 15px;
+  padding: 0 10px;
   width: 100%;
   
   margin: 0 auto;
@@ -452,10 +470,12 @@ section {
 
 .slider-wrapper {
   margin: 0 auto;
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 700px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .slider {
@@ -469,12 +489,16 @@ section {
   border-radius: 0.5rem;
 }
 
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
 .slider-item {
   flex: 0 0 100%;
-  height: 800px;
-  width: 100%;
+  min-width: 300px;
   scroll-snap-align: start;
   position: relative;
+  margin: 0 10px;
 }
 
 .slider img {
@@ -491,12 +515,13 @@ section {
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   color: white;
-  padding: 1rem;
+  padding: 10px;
   cursor: pointer;
   z-index: 10;
   font-size: 2rem;
   border-radius: 50%;
-  user-select: none;
+  display: flex;
+  justify-content: center;
 }
 
 .slider-button.left {
@@ -509,6 +534,10 @@ section {
 
 .slider-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-button {
+  padding: 8px; /* Slightly smaller buttons for medium screens */
 }
 
 
