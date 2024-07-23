@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Discover Dubrovnik</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="../stranica/css/style.css" />
+        <link rel="stylesheet" href="../stranica/css/responsive.css" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="img/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="img/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+    <body
+        onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'
+    >
+        <!--navbar-->
+        <nav class="navbar glass">
+            <div class="logo-container">
+                <a href="#home" class="logo-link">
+                    <img
+                        class="img2"
+                        src="./img/logodu.PNG"
+                        width="65"
+                        height="85"
+                    />
+                    <h1 class="logo">DISCOVER DUBROVNIK</h1>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" id="pri" class="active cir_border">Home</a></li>
+                <li><a href="#tours" id="sec" class="cir_border">Tours</a></li>
+                <li><a href="#explore" id="tri" class="cir_border">Explore</a></li>
+                <li><a href="#about" id="quad" class="cir_border">About</a></li>
+                <li><a href="#gallery" id="quint" class="cir_border">Gallery</a></li>
+                <li><a href="#contribution" id="hex" class="cir_border">Contribution</a></li>
+                <li><a href="#contact" id="hept" class="cir_border">Contact</a></li>
+                <li><a href="booking.html" target="_blank" class="cir_border">Booking</a></li>
+            </ul>
+            <img src="./img/menu-btn.png" alt="Menu" class="menu-btn" />
+        </nav>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuBtn = document.querySelector('.menu-btn');
+                const navLinks = document.querySelector('.nav-links');
+
+                menuBtn.addEventListener('click', function() {
+                    navLinks.classList.toggle('show-nav-links');
+                });
+            });
+        </script>
+        <!--navbar-->
+
+        <header id="home">
+            <div class="header-content">
+                <h2 id="quote">Explore the colourful Dubrovnik</h2>
+                <div class="line"></div>
+                <h1>DISCOVER DUBROVNIK WITH LOCAL GUIDE</h1>
+                <a
+                    href="#tours"
+                    class="ctn"
+                    onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
+                    >Learn more</a
+                >
+            </div>
+        </header>
+
+        <!--Tours-->
+        <section class="tours" id="tours">
+            <div class="container">
+                <div class="title">
+                    <h1 class="dark">Tours</h1>
+                    <div class="line"></div>
+                </div>
+                <div class="red">
+                    <article class="card col">
+                        <img src="img/dubrovnik3.jpg" />
+                        <h4 class="dark">Discover Dubrovnik with Local Guide</h4>
+
+
+                    </article>
+                    <article class="card col">
+                        <img src="./img/zidovska.JPG" />
+                        <h4 class="dark">Private Jewish Heritage & Old Town Orientation</h4>
+
+
+                    </article>
+                    <article class="card col">
+                        <img src="img/zidine.jpg" />
+                        <h4 class="dark">Mighty Walls of Dubrovnik</h4>
+
+
+                    </article>
+                    <article class="card col">
+                        <img src="./img/rat.jpg" />
+                        <h4 class="dark">Dubrovnik's War for Peace </h4>
+
+
+                    </article>
+                    <article class="card col">
+                        <img src="./img/got.png" />
+                        <h4 class="dark">Game Of Thrones locations + History tour</h4>
+
+                    </article>
+                    <article class="card col">
+                        <img src="./img/panorama.jpg" />
+                        <h4 class="dark">Private panoramic excursion around Dubrovnik</h4>
+
+                    </article>
+                    <article class="card col">
+                        <img src="./img/early.PNG" />
+                        <h4 class="dark">Early Bird Tour</h4>
+
+                    </article>
+
+                </div>
+            </div>
+            <a
+            href="tours.html"
+            class="ctn"
+
+            >Details</a
+        >
+
+        </section>
+        <!--Events-->
+
+        <!--Explore-->
+        <section class="explore" id="explore">
+            <div class="explore-content">
+                <h1>EXPLORE DUBROVNIK</h1>
+                <div class="line"></div>
+                <p>
+                    <h4>Saint Augustine:</h4> "The world is a book, and those who do not travel read only one page." <br /><h4>George Bernard Shaw: </h4>"Those who seek paradise on Earth should come to Dubrovnik."
+                </p>
+
+            </div>
+        </section>
+        <!--Explore-->
+
+        <!--tours-->
+        <section class="about" id="about">
+            <div class="container row">
+                <div class="col content-col">
+                    <h1 class="font-color">About</h1>
+                    <div class="line"></div>
+                    <p>
+                        Hi, my name is Mato and I am licensed tourist guide in Dubrovnik since 2014.
+
+I was born and raised in Dubrovnik some 50+ years ago. I started my career in tourism in 1988. working as a receptionist. I never left this "Pearl of Adriatic", not even in those hard times in '90. 's. On the contrary I volunteered to defend my home.
+
+Until three years ago I was also Front desk manager at 5* hotel in Dubrovnik for 9 years and I decided to leave hotel bussines and continue as a local guide with a passion for history and more than 30 years experience in tourism.
+
+So, I am ready to present you both, ancient and recent history of my city. Of course, if you have some special interest, we can customize my regular tours.
+
+I am looking forward to meeting you and to adjust your tour to to exceed your expectations.
+
+Licensed Tour Guide for Dubrovnik - Neretva County , Master Degree in Business and Economy, Professional licenced driver.
+
+
+
+                    </p>
+
+                </div>
+                <div class="image-col">
+                    <div class="image-gallery">
+                        <img src="./img/mato.PNG" alt="" />
+
+
+                    </div>
+                </div>
+            </div>
+            <br></br>
+            <div class="title">
+                <h1 class="font-color">Gallery</h1>
+                <div class="line"></div>
+            </div>
+            <section class="gallery" id="gallery">
+                <div class="container-gallery">
+                    <div class="slider-wrapper">
+                        <button class="slider-button left" id="left-arrow">&#10094;</button>
+                        <div class="slider" id="slider">
+                            <div class="slider-item">
+                                <img src="./img/dubrovnik3.jpg" alt="Dubrovnik" />
+                            </div>
+                            <div class="slider-item">
+                                <img src="./img/slika6.PNG" alt="Slika" />
+                            </div>
+                            <div class="slider-item">
+                                <img src="./img/slika7.PNG" alt="Dubrovnik" />
+                            </div>
+                            <div class="slider-item">
+                                <img src="./img/slika8.PNG" alt="Dubrovnik" />
+                            </div>
+                            <div class="slider-item">
+                                <img src="./img/slika9.PNG" alt="Dubrovnik" />
+                            </div>
+                            <div class="slider-item">
+                                <img src="./img/slika10.PNG" alt="Dubrovnik" />
+                            </div>
+                            <div class="slider-item">
+                                <img src="./img/slika11.PNG" alt="Dubrovnik" />
+                            </div>
+                            <div class="slider-item">
+                                <img src="./img/stradun.JPG" alt="Stradun" />
+                            </div>
+                            <div class="slider-item">
+                                <img src="./img/srd.jpg" alt="Srd" />
+                            </div>
+                            <div class="slider-item">
+                                <img src="./img/klopa.PNG" alt="Lunch" />
+                            </div>
+                        </div>
+                        <button class="slider-button right" id="right-arrow">&#10095;</button>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.getElementById('slider');
+    const leftArrow = document.getElementById('left-arrow');
+    const rightArrow = document.getElementById('right-arrow');
+
+    leftArrow.addEventListener('click', () => {
+        slider.scrollBy({
+            left: -slider.clientWidth,
+            behavior: 'smooth'
+        });
+    });
+
+    rightArrow.addEventListener('click', () => {
+        slider.scrollBy({
+            left: slider.clientWidth,
+            behavior: 'smooth'
+        });
+    });
+
+    slider.addEventListener('scroll', () => {
+        const index = Math.round(slider.scrollLeft / slider.clientWidth);
+        // Handle dot navigation updates if needed
+    });
+
+    // Optional: Handle dot navigation updates if still using dots
+});
+            </script>
+
+        <!-- About -->
+
+        <!-- Contributions -->
+        <div class="title">
+            <h1 class="font-color">Contributor</h1>
+            <div class="line"></div>
+        </div>
+        <section class="contributor" id="contribution">
+            <div class="concard">
+                <img
+                    src="img/caption.jpg"
+                    alt="profile-picture"
+                    class="pfp"
+                />
+                <div class="text">
+                    <h1>Mato Teo Knego</h1>
+                </div>
+                <div class="logolink">
+                    <a href="https://www.facebook.com/mato.knego" target="_blank">
+                        <img src="img/fbicon.png" alt="Facebook-Logo" class="facebook-logo" />
+                    </a>
+                    <a href="https://hr.linkedin.com/in/mag-oec-mato-knego-58048a12" target="_blank">
+                        <img src="img/linkedin.png" alt="LinkedIn-Logo" class="linkedin-logo" />
+                    </a>
+                    <a href="https://www.tripadvisor.com/Attraction_Review-g295371-d23822571-Reviews-Mato_Knego-Dubrovnik_Dubrovnik_Neretva_County_Dalmatia.html" target="_blank">
+                        <img src="img/tripadv.png" alt="Tripadvisor-Logo" class="tripadvisor-logo" />
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- Contributions -->
+
+        <!-- contact -->
+
+       <section id="contact">
+        <div class="title">
+            <h1 class="font-color">Contact</h1>
+            <div class="line"></div>
+        </div>
+
+                </form>
+
+                    </div>
+                    <div class="c_boxx">
+                        <a href="mailto:mtknego@gmail.com"
+                            ><i class="fa fa-envelope"></i>
+                            Mail: mtknego@gmail.com
+                        </a>
+                    </div>
+                    <div class="c_boxx">
+                        <a href="tel:+38598818731"
+                            ><i class="fa fa-phone"></i>
+                            Phone: (+385)98 818 731
+                        </a>
+                    </div>
+                    <div class="c_boxx">
+                        <a href="#"
+                            ><i class="fa fa-map-marker"></i>
+                            Location: Dubrovnik, Croatia
+
+                        </a>
+                       <a href="#tours"
+                        class="ctn"
+                        onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
+                        >Learn more</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact  -->
+        <!-- up scroll -->
+        <div id="back-to-top">
+            <button onclick="scrollToTop()">Top</button>
+        </div>
+        <!-- end -->
+        <!--footer-->
+        <section class="footer">
+            <span
+                >Created By Luka Tot | &#169; 2024 All rights
+                reserved.</span
+            >
+            <div class="social">
+                <li>
+                    <div class="social-logolink">
+                        <a href="https://www.linkedin.com/in/luka-tot-96b74b1bb/" target="_blank">
+                            <img src="img/linkedin.png" alt="LinkedIn-Logo" class="linkedin-logo" />
+                        </a>
+
+                    </div>
+
+                </li>
+            </div>
+        </section>
+        <!--footer-->
+
+        <script>
+            const menuBtn = document.querySelector(".menu-btn");
+            const navlinks = document.querySelector(".nav-links");
+
+            menuBtn.addEventListener("click", () => {
+                navlinks.classList.toggle("mobile-menu");
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="../stranica/scripts/main.js"></script>
+    </body>
+</html>

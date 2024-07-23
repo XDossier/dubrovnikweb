@@ -1,0 +1,124 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;800&family=Parisienne&family=Roboto&family=Teko:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif; /* Default font */
+    background-color: #f0f0f0; /* Light background color */
+    color: #333; /* Default text color */
+}
+
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+.header-content {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+    font-family: 'Lobster', cursive; /* Lobster font */
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color:#640f87; /* Purple color */
+    ; 
+}
+
+.line {
+    width: 100px;
+    height: 4px;
+    background: #579ab4; /* Blue color */
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    min-height: 100vh;
+    background-image: url(../img/bgdu.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1 1 30%; /* Adjust width as needed */
+    margin: 10px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 450px; /* Fixed height for each card */
+}
+
+.card img {
+    width: 100%; /* Ensure image takes full width of its container */
+    height: 380px; /* Adjust the height as needed */
+    object-fit:cover; /* Maintain aspect ratio */
+    border-radius: 8px 8px 0 0; /* Rounded corners for top of image */
+}
+
+
+
+.col h4 {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif; /* Adjust font as needed */
+    font-size: 1.8rem; /* Adjust font size */
+}
+
+.col p {
+    padding: 0 20px;
+    text-align: left;
+    color: #555;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif; /* Adjust font as needed */
+}
+
+.card {
+    cursor: pointer;
+    height: 1240px;
+}
+
+.btn-home {
+    font-family: var(--ff-montserrat);
+  font-size: var(--fs-links-btns);
+  font-weight: 700;
+  padding: 13px 50px;
+  background: #fc036b;
+  border-radius: 30px;
+  color: whitesmoke;
+  }
+
+  .back-to-home {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }

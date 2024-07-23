@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Tour</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/booking-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <div class="container-book">
+        <form id="booking-form">
+            <h3>Book A Tour</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="date" placeholder="Tour Date" required>
+            <select name="tour" required>
+                <option value="" disabled selected>Select a tour</option>
+                <option value="Discover Dubrovnik with Local Guide, 2 hours duration">Discover Dubrovnik with Local Guide, 2 hours duration</option>
+                <option value="Private Jewish Heritage & Old Town Orientation Tour, 2 hours duration">Private Jewish Heritage & Old Town Orientation Tour, 2 hours duration</option>
+                <option value="Private Half Day Tour around Mighty Walls of Dubrovnik, 3 hours duration">Private Half Day Tour around Mighty Walls of Dubrovnik, 3 hours duration</option>
+                <option value="Dubrovnik's War for Peace Tour, 4 hours duration">Dubrovnik's War for Peace Tour, 4 hours duration</option>
+                <option value="Game of Thrones locations + History tour, 2 hours duration">Game of Thrones locations + History tour, 2 hours duration</option>
+                <option value="Private panoramic excursion around Dubrovnik, 4 hours duration">Private panoramic excursion around Dubrovnik, 4 hours duration</option>
+                <option value="Early Bird Tour, 7AM-8:30AM">Early Bird Tour, 7AM-8:30AM</option>
+            </select>
+            <button type="submit">Request</button>
+        </form>
+        <div id="success-message" class="success-message" style="display: none;">
+            <p>Your booking request has been sent successfully!</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        $(document).ready(function() {
+            $('#date').flatpickr({
+                altInput: true,
+                altFormat: "F j, Y",
+                dateFormat: "Y-m-d",
+                minDate: "today",
+            });
+
+            $('#booking-form').on('submit', function(event) {
+                event.preventDefault(); // Prevent default form submission
+                
+                const formData = {
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    date: $('#date').val(),
+                    tour: $('[name="tour"]').val()
+                };
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'index.php', // Your PHP script for sending email
+                    data: formData,
+                    success: function(response) {
+                        if (response === 'success') {
+                            $('#success-message').fadeIn().delay(3000).fadeOut(); // Show success message
+                            $('#booking-form')[0].reset(); // Reset form
+                        } else {
+                            alert('Failed to send booking request. Please try again.');
+                        }
+                    },
+                    error: function() {
+                        alert('Failed to send booking request. Please try again.');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
