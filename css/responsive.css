@@ -1,6 +1,9 @@
-@@ -0,0 +1,169 @@
+
 /* mobile responsiveness design */
 @media screen and (max-width: 990px) {
+
+
+  
   .contact_us {
     flex-direction: column;
     width: 100%;
@@ -10,8 +13,129 @@
     margin: auto;
     margin-bottom: 30px;
   }
+
+  .header-content {
+    font-family: var(--ff-lora);
+    width: 100%;
+    letter-spacing: 0.5rem;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    padding: 2rem;
+    margin-bottom: 100px;
+    margin-top:120px;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/du.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header-content h1 {
+    width: 100%;
+    letter-spacing: 0.5rem;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: normal;
+    z-index: 1;
+    padding: 2rem;
+    margin-bottom: 100px;
+}
+
+.logo {
+    font-size: 200px;
+    margin: auto;
+    max-width: 350px;
+    padding: 8px;
+}
+
+.container.row {
+  flex-direction: column;
+  align-items: center;
+}
+.content-col p {
+  text-align: center; /* Center align text */
+  font-size: 35px;
+  padding: 0;
+  text-align: justify;
+}
+
+.content-col,
+.image-col {
+  padding: 10px;
+  width: 100%;
+}
+.about-text {
+  font-size: 35px;
+  padding: 15px;
+}
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+}
 }
 @media screen and (max-width: 1130px) {
+
+  .header-content {
+    font-family: var(--ff-lora);
+    width: 100%;
+    letter-spacing: 0.5rem;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    padding: 2rem;
+    margin-bottom: 100px;
+    margin-top:120px;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/du.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header-content h1 {
+    width: 100%;
+    letter-spacing: 0.5rem;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: normal;
+    z-index: 1;
+    padding: 2rem;
+    margin-bottom: 100px;
+}
+
+.logo {
+    font-size: 100px;
+    margin: auto;
+    max-width: 400px;
+    padding: 8px;
+}
   .menu-btn {
     display: block;
   }
@@ -33,7 +157,7 @@
   .nav-links {
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: auto;
     justify-content: center;
     background: #484872;
     margin-top: -900px;
@@ -45,12 +169,102 @@
     border-bottom-right-radius: 30%;
   }
 
-  .nav-links li {
-    margin: 30px auto;
+  .nav-links{
+    margin-top: 80px;
+    font-family: var(--ff-lora);
   }
+.nav-links li{
+  margin: 10px auto;
+
+  text-align: center;
+}
+
+.content-col p {
+  text-align: center; /* Center align text */
+  font-size: 50px;
+  padding: 0;
+  text-align: justify;
+}
 }
 
 @media screen and (max-width: 1440px) {
+
+  .header-content {
+    font-family: var(--ff-lora);
+    width: 100%;
+    letter-spacing: 0.5rem;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    padding: 2rem;
+    margin-bottom: 100px;
+    margin-top:120px;
+}
+
+
+.header {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/du.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.header-content h1 {
+    width: 100%;
+    letter-spacing: 0.5rem;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: normal;
+    z-index: 1;
+    padding: 2rem;
+    margin-bottom: 100px;
+}
+
+.nav-links {
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  background: #484872;
+  margin-top: -900px;
+  transition: all 0.5s ease;
+}
+
+.mobile-menu {
+  margin-top: 602px;
+  border-bottom-right-radius: 30%;
+}
+
+.menu-btn{
+  display: block;
+}
+.nav-links{
+  margin-top: 80px;
+  font-family: var(--ff-lora);
+}
+.nav-links li{
+margin: 10px auto;
+
+text-align: center;
+}
+
+.logo {
+    font-size: 200px;
+    margin: auto;
+    max-width: 600px;
+    padding: 8px;
+}
 	 .containerx {
 	  top: 40%;
 	  bottom: 40%;
@@ -84,9 +298,99 @@
   .img2{
     display: none;
   }
-}
+
+  .explore-content{
+    font-size: 40px;
+  }
+
+  .container.row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-col p {
+    text-align: center; /* Center align text */
+    font-size: 15px;
+    padding: 0;
+    text-align: justify;
+  }
+
+  .content-col,
+  .image-col {
+    padding: 10px;
+    width: 100%;
+  }
+  .about-text {
+    font-size: 10px;
+    padding: 15px;
+  }
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+  }
 
 @media only screen and (max-width: 850px) {
+
+  .header-content {
+    font-family: var(--ff-lora);
+    width: 100%;
+    letter-spacing: 0.5rem;
+    font-size: 210px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    padding: 2rem;
+    margin-bottom: 100px;
+    margin-top:120px;
+}
+
+
+
+.header {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/du.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header-content h1 {
+    width: 100%;
+    letter-spacing: 0.5rem;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: normal;
+    z-index: 1;
+    padding: 2rem;
+    margin-bottom: 100px;
+}
+
+.logo {
+    font-size: 100px;
+    margin: auto;
+    max-width: 600px;
+    padding: 8px;
+}
+
+  .nav-links{
+    margin-top: 80px;
+    font-family: var(--ff-lora);
+  }
+.nav-links li{
+  margin: 10px auto;
+
+  text-align: center;
+}
+
   /*events*/
   .row {
     flex-direction: column;
@@ -111,6 +415,26 @@
   /*explore*/
   .explore-content {
     width: 100%;
+    font-size: 20px;
+  }
+ 
+  .container.row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-col,
+  .image-col {
+    padding: 10px;
+    width: 100%;
+  }
+  .content-col p {
+    text-align: center; /* Center align text */
+    font-size: 50px;
+    padding: 0;
+    text-align: justify;
+  }
+  .image-gallery {
+    width: 100%;
   }
 
   /*tours*/
@@ -122,72 +446,111 @@
   .footer {
     padding: 10px;
   }
-  .content-col {
-    width: 100%;
-  }
-  #about_us p {
-    width: 70%;
-  }
+ 
 
   .img2{
     display: none;
   }
+
+  
 }
 
 @media screen and (max-width: 768px) {
-  #about_us p {
-    width: 85%;
-    padding-top: 7em;
-    margin: auto;
+
+  .nav-links{
+    margin-top: 80px;
+    font-family: var(--ff-lora);
   }
+.nav-links li{
+  margin: 10px auto;
+
+  text-align: center;
+}
+
+
 
   .header-content {
-    padding: 1.5rem;
-  }
+    font-family: var(--ff-lora);
+    width: 100%;
+    letter-spacing: 0.5rem;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    padding: 2rem;
+    margin-bottom: 100px;
+    margin-top:120px;
+}
 
-  .header-content h2 {
-    font-size: calc(1.2rem + 1vw);
-  }
+.header {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/du.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 
-  .header-content h1 {
-    font-size: calc(1.5rem + 1.5vw);
-  }
+.header-content h1 {
+    width: 100%;
+    letter-spacing: 0.5rem;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: normal;
+    z-index: 1;
+    padding: 2rem;
+    margin-bottom: 100px;
+}
 
-  .header-content .line {
-    width: 80px;
-  }
-
-  .header-content .ctn {
-    padding: 10px 25px;
-    font-size: calc(0.9rem + 0.5vw);
-  }
+.logo {
+    font-size: 40px;
+    margin: auto;
+    max-width: 150px;
+    padding: 8px;
+}
   form,
   .cbox {
     width: 90%;
   }
   .ctn {
     margin: auto;
+    height: auto;
+    width: auto;
   }
 
   .img2{
     display: none;
   }
 
-  .content-col, .image-col {
-    flex: 1 1 100%; /* Full width for both columns */
+  .container.row {
+    flex-direction: column;
+    align-items: center;
   }
-
-  .content-col {
-    align-items: center; /* Center text content */
-    text-align: center; /* Center align text */
-  }
-
   .content-col p {
     text-align: center; /* Center align text */
+    font-size: 50;
+    padding: 0;
+    text-align: justify;
   }
 
+  .content-col,
+  .image-col {
+    padding: 10px;
+    width: 100%;
+  }
+  
   .image-gallery {
-    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: auto;
   }
 
   .explore-content {
@@ -227,6 +590,16 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  .nav-links{
+    margin-top: 80px;
+    font-family: var(--ff-lora);
+  }
+.nav-links li{
+  margin: 10px auto;
+
+  text-align: center;
+}
   #about_us p {
     margin: auto;
   }
@@ -242,12 +615,84 @@
   .img2{
     display: none;
   }
+  .container.row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-col p {
+    text-align: center; /* Center align text */
+    font-size: 15px;
+    padding: 0;
+    text-align: justify;
+  }
+
+  .content-col,
+  .image-col {
+    padding: 10px;
+    width: 100%;
+  }
+  .about-text {
+    font-size: 10px;
+    padding: 15px;
+  }
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   header {
     background-image: url("../img/du.jpg"); /* Use a high-res image for retina screens */
   }
+}
+.header-content {
+  font-family: var(--ff-lora);
+  width: 100%;
+  letter-spacing: 0.5rem;
+  font-size: 8px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  padding: 2rem;
+  margin-bottom: 100px;
+  margin-top:120px;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  background-image: url("../img/du.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.header-content h1 {
+  width: 100%;
+  letter-spacing: 0.5rem;
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  white-space: normal;
+  z-index: 1;
+  padding: 2rem;
+  margin-bottom: 100px;
+}
+
+.logo {
+font-size: 25px;
+margin: 0;
+max-width: 150px;
+padding: 5px;
 }
 
 .header-content h2 {
@@ -281,29 +726,135 @@
 .header-content .ctn:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+.gallery {
+    
+  height: 500px;
+  align-items: center;
+}
+.slider-wrapper {
+  width: 450px; /* Adjust to full width on smaller screens */
+  height: 500px; /* Adjust height for smaller screens */
+  align-items: center;
+}
+
+.slider-item {
+  width: 200px;
+  height: 400px;
+  align-items: center;
+}
+
+.slider-button {
+  padding: 2px; /* Slightly smaller buttons for medium screens */
+}
+
+.container.row {
+  flex-direction: column;
+  align-items: center;
+}
+.content-col p {
+  text-align: center; /* Center align text */
+  font-size: 15px;
+  padding: 0;
+  text-align: justify;
+}
+
+.content-col,
+.image-col {
+  padding: 10px;
+  width: 100%;
+}
+.about-text {
+  font-size: 10px;
+  padding: 15px;
+}
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+}
+
 
 @media screen and (max-width: 480px) {
 
-  .header-content {
-    padding: 1rem;
-  }
 
-  .header-content h2 {
-    font-size: calc(1rem + 1vw);
+  .nav-links{
+    margin-top: 80px;
+    font-family: var(--ff-lora);
   }
+.nav-links li{
+  margin: 10px auto;
 
-  .header-content h1 {
-    font-size: calc(1.2rem + 1vw);
-  }
+  text-align: center;
+}
 
-  .header-content .line {
-    width: 60px;
+
+  .header-content .ctn {
+    display: inline-block;
+    padding: 40px 40px;
+    background-color:rgba(255, 255, 255, 0.1) ;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: background 0.3s ease;
   }
+  
+  .header-content .ctn:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+ 
 
   .header-content .ctn {
     padding: 8px 20px;
     font-size: calc(0.8rem + 0.5vw);
-  }
+  }.header-content {
+    font-family: var(--ff-lora);
+    width: 100%;
+    letter-spacing: 0.5rem;
+    font-size: 8px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    padding: 2rem;
+    margin-bottom: 100px;
+    margin-top:120px;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/du.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header-content h1 {
+    width: 100%;
+    letter-spacing: 0.5rem;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: normal;
+    z-index: 1;
+    padding: 2rem;
+    margin-bottom: 100px;
+}
+
+.logo {
+  font-size: 15px;
+  margin: 0;
+  max-width: 150px;
+  padding: 5px;
+}
+
   .ctn {
     padding: 13px 25px;
   }
@@ -316,74 +867,189 @@
   }
 
   .gallery {
-    padding: 40px 0;
-}
-
-.slider-item {
-    min-width: 100%; /* Full width for small screens */
-    margin: 0;
-}
-
-.slider-button {
-    padding: 3px; /* Smaller buttons for small screens */
-}
-}
-@media screen and (max-width: 400px) {
-  .ctn {
-    padding: 13px 25px;
+    
+    height: auto;
+    align-items: center;
   }
-  .c_boxx a p {
-    font-size: 16px;
+  .slider-wrapper {
+    width: 300px; /* Adjust to full width on smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+    align-items: center;
   }
 
-  .img2{
-    display: none;
+  .slider-item {
+    width: 200px;
+    height: 400px;
+    align-items: center;
   }
 
-  .gallery {
-    padding: 40px 0;
-}
-
-.slider-item {
-    min-width: 100%; /* Full width for small screens */
-    margin: 0;
-}
-
-.slider-button {
-    padding: 5px; /* Smaller buttons for small screens */
-}
-}
-
-@media (max-width: 850px) {
-  .content-col {
-    text-align: center;
+  .slider-button {
+    padding: 2px; /* Slightly smaller buttons for medium screens */
   }
-  .content-col .line {
-    margin: 0.5rem auto;
-  }
-  .content-col .ctn {
-    margin: 0 auto;
-    position: inherit;
+
+  .container.row {
+    flex-direction: column;
+    align-items: center;
   }
   .content-col p {
-    max-width: 75%;
+    text-align: center; /* Center align text */
+    font-size: 15px;
+    padding: 0;
     text-align: justify;
   }
 
+  .content-col,
+  .image-col {
+    padding: 10px;
+    width: 100%;
+  }
+  .about-text {
+    font-size: 10px;
+    padding: 15px;
+  }
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+
+  
+  .nav-links{
+    margin-top: 80px;
+    font-family: var(--ff-lora);
+  }
+.nav-links li{
+  margin: 10px auto;
+
+  text-align: center;
+}
+ 
+  
+
+  .header-content .ctn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color:rgba(255, 255, 255, 0.1) ;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .header-content .ctn:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .ctn {
+    font-family: var(--ff-montserrat);
+    font-size: var(--fs-links-btns);
+    font-weight: 700;
+    padding: 13px 50px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+  }
+
+  .header-content {
+    font-family: var(--ff-lora);
+    width: 100%;
+    letter-spacing: 0.5rem;
+    font-size: 8px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    padding: 2rem;
+    margin-bottom: 100px;
+    margin-top:120px;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-image: url("../img/du.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header-content h1 {
+    width: 100%;
+    letter-spacing: 0.5rem;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    white-space: normal;
+    z-index: 1;
+    padding: 2rem;
+    margin-bottom: 100px;
+}
+
+.logo {
+    font-size: 12px;
+    margin: 0;
+    max-width: 150px;
+    padding: 5px;
+}
+
   .img2{
     display: none;
   }
 
   .gallery {
-    padding: 40px 0;
-}
+    
+    height: auto;
+    align-items: center;
+  }
+  .slider-wrapper {
+    width: 300px; /* Adjust to full width on smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+    align-items: center;
+  }
 
-.slider-item {
-    min-width: 100%; /* Full width for small screens */
-    margin: 0;
-}
+  .slider-item {
+    width: 200px;
+    height: 400px;
+    align-items: center;
+  }
 
-.slider-button {
-    padding: 5px; /* Smaller buttons for small screens */
-}
+  .slider-button {
+    padding: 2px; /* Slightly smaller buttons for medium screens */
+  }
+
+  .container.row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-col p {
+    text-align: center; /* Center align text */
+    font-size: 15px;
+    padding: 0;
+    text-align: justify;
+  }
+
+  .content-col,
+  .image-col {
+    padding: 10px;
+    width: 100%;
+  }
+  .about-text {
+    font-size: 10px;
+    padding: 15px;
+  }
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+  }
 }
