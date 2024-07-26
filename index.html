@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -59,16 +60,7 @@
             <img src="./img/menu-btn.png" alt="Menu" class="menu-btn" />
         </nav>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const menuBtn = document.querySelector('.menu-btn');
-                const navLinks = document.querySelector('.nav-links');
-
-                menuBtn.addEventListener('click', function() {
-                    navLinks.classList.toggle('show-nav-links');
-                });
-            });
-        </script>
+        
         <!--navbar-->
 
         <header id="home">
@@ -79,7 +71,7 @@
                 <a
                     href="#tours"
                     class="ctn"
-                    onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
+                   
                     >Learn more</a
                 >
             </div>
@@ -89,7 +81,7 @@
         <section class="tours" id="tours">
             <div class="container">
                 <div class="title">
-                    <h1 class="dark">Tours</h1>
+                    <h1 class="font-color">Tours</h1>
                     <div class="line"></div>
                 </div>
                 <div class="red">
@@ -160,36 +152,34 @@
 
         <!--tours-->
         <section class="about" id="about">
+            <h1 class="font-color">About</h1>
+            <div class="line"></div>
             <div class="container row">
                 <div class="col content-col">
-                    <h1 class="font-color">About</h1>
-                    <div class="line"></div>
-                    <p>
-                        Hi, my name is Mato and I am licensed tourist guide in Dubrovnik since 2014.
-
-I was born and raised in Dubrovnik some 50+ years ago. I started my career in tourism in 1988. working as a receptionist. I never left this "Pearl of Adriatic", not even in those hard times in '90. 's. On the contrary I volunteered to defend my home.
-
-Until three years ago I was also Front desk manager at 5* hotel in Dubrovnik for 9 years and I decided to leave hotel bussines and continue as a local guide with a passion for history and more than 30 years experience in tourism.
-
-So, I am ready to present you both, ancient and recent history of my city. Of course, if you have some special interest, we can customize my regular tours.
-
-I am looking forward to meeting you and to adjust your tour to to exceed your expectations.
-
-Licensed Tour Guide for Dubrovnik - Neretva County , Master Degree in Business and Economy, Professional licenced driver.
-
-
-
+                   
+                    <p class="about-text">
+                        Hi, my name is Mato and I am a licensed tourist guide in Dubrovnik since 2014.
+                        
+                        I was born and raised in Dubrovnik some 50+ years ago. I started my career in tourism in 1988, working as a receptionist. I never left this "Pearl of the Adriatic," not even in those hard times in the '90s. On the contrary, I volunteered to defend my home.
+                        
+                        Until three years ago, I was also the Front Desk Manager at a 5* hotel in Dubrovnik for 9 years, and I decided to leave the hotel business and continue as a local guide with a passion for history and more than 30 years of experience in tourism.
+                        
+                        So, I am ready to present to you both ancient and recent history of my city. Of course, if you have some special interest, we can customize my regular tours.
+                        
+                        I am looking forward to meeting you and adjusting your tour to exceed your expectations.
+                        
+                        Licensed Tour Guide for Dubrovnik - Neretva County, Master Degree in Business and Economy, Professional licensed driver.
                     </p>
-
                 </div>
-                <div class="image-col">
+                <div class="col image-col">
                     <div class="image-gallery">
-                        <img src="./img/mato.PNG" alt="" />
-
-
+                        <img src="./img/mato.PNG" alt="Mato">
                     </div>
                 </div>
             </div>
+        </section>
+        
+            
             <br></br>
             <div class="title">
                 <h1 class="font-color">Gallery</h1>
@@ -365,10 +355,22 @@ Licensed Tour Guide for Dubrovnik - Neretva County , Master Degree in Business a
         <script>
             const menuBtn = document.querySelector(".menu-btn");
             const navlinks = document.querySelector(".nav-links");
+            const header = document.querySelector(".header"); 
 
             menuBtn.addEventListener("click", () => {
                 navlinks.classList.toggle("mobile-menu");
+                contentWrapper.classList.toggle("blur-background");
             });
+            const menuLinks = navlinks.querySelectorAll('a');
+
+// Add click event listener to each menu link
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // Close the menu
+        navlinks.classList.remove("mobile-menu");
+        header.classList.remove("blur-background"); // Remove blur effect
+    });
+});
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="scripts/main.js"></script>
