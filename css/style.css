@@ -87,7 +87,7 @@ html {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(15px);
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -142,7 +142,7 @@ html {
   height: 100%; /* Full height */
   overflow: hidden; /* Hides any overflow content */
   /* Ensures it's on top of other content */
-  transition: all 0.5s ease; /* Smooth transition for opening/closing */
+  transition: all 0.8s ease; /* Smooth transition for opening/closing */
 }
 
 /* Display the menu when the mobile menu class is active */
@@ -185,6 +185,7 @@ header {
   width: 100%;
   height: 100vh;
   background-image: url("../img/du.jpg");
+  object-fit: cover;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -220,13 +221,15 @@ header {
 
 /* Adding text stroke (outline) */
 .header-content h1{
-  font-family: var(--ff-rubik-dirt);
-  font-size: calc(2.2rem + 2vw);
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
+  width: 100%;
+  letter-spacing: 0.5rem;
+  font-size: 100px;
   font-weight: 300;
-  color: rgb(254, 252, 252);
-  white-space: nowrap; /* Prevent title from wrapping */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  white-space: normal;
+  z-index: 1;
+  padding: 2rem;
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5px);
   border-radius: 0.5rem;
@@ -317,12 +320,16 @@ section {
   text-align: center;
 }
 .tours {
-  padding: 40px auto;
+  padding: 40px 0;
+  text-align:  center;
+  
 }
 
 .container {
   width: 100%;
-  
+  max-width: 1500;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -387,6 +394,7 @@ align-items: center;
   align-items: center;
   margin: 10px;
   height: 800;
+  
 }
 
 .row .col img {
@@ -497,8 +505,7 @@ align-items: center;
 
 .container.row {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+ 
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
@@ -944,7 +951,7 @@ input[type="submit"]:hover {
 
 /* animations */
 img {
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 img:hover {
